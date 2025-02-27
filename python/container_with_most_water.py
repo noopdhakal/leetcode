@@ -25,7 +25,7 @@ class Solution:
         res = 0
 
         while l < r:
-            area = min(heights[l], heights[r]) * (r - l)
+            area = min(heights[l], heights[r]) * (r - l) ## width times height, finding height of minimum
             res = max(res, area)
             if heights[l] <= heights[r]:
                 l += 1
